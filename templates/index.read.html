@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>{%block title%}{%endblock title%}</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />-->
+	<link href="../../static/assets/plugins/bootstrap3/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../../static/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="../../static/assets/plugins/animate/animate.min.css" rel="stylesheet" />
+	<link href="../../static/assets/css/forum/style.min.css" rel="stylesheet" />
+	<link href="../../static/assets/css/forum/style-responsive.min.css" rel="stylesheet" />
+	<link href="../../static/assets/css/forum/theme/default.css" id="theme" rel="stylesheet" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="../../static/assets/plugins/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css" rel="stylesheet" />
+	<!-- ================== END PAGE LEVEL STYLE ================== -->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../../static/assets/plugins/pace/pace.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+</head>
+<body>
+    <!-- begin #header -->
+    <div id="header" class="header navbar navbar-default navbar-fixed-top">
+        <!-- begin container -->
+        <div class="container">
+            <!-- begin navbar-header -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/index/" class="navbar-brand">
+                    <span class="navbar-logo"></span>
+                    <span class="brand-text">
+                        Color 论坛
+                    </span>
+                </a>
+            </div>
+            {%block status%}{%endblock status%}
+        </div>
+        <!-- end container -->
+    </div>
+{%block body%}{%endblock body%}
+    <div id="footer" class="footer">
+        <!-- begin container -->
+        <div class="container">
+            <!-- begin row -->
+            <div class="row">
+                <!-- begin col-4 -->
+                <div class="col-md-4">
+                    <!-- begin section-container -->
+                    <div class="section-container">
+                        <h4>关于Color论坛</h4>
+                        <p>
+                            本论坛永久免费,永久开放.
+                        </p>
+                    </div>
+                    <!-- end section-container -->
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-md-4">
+                    <!-- begin section-container -->
+                    <div class="section-container">
+                        <h4>Latest Post</h4>
+                        <ul class="latest-post">
+                            <li>
+                                <h4 class="title"><a href="#">Consectetur adipiscing elit ultrices</a></h4>
+                                <p class="time">yesterday 10:42am</p>
+                            </li>
+                            <li>
+                                <h4 class="title"><a href="#">Fusce ultrices ipsum porttitor</a></h4>
+                                <p class="time">10/04/2015</p>
+                            </li>
+                            <li>
+                                <h4 class="title"><a href="#">Cras porttitor fermentum adipiscing</a></h4>
+                                <p class="time">02/04/2015</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end section-container -->
+                </div>
+                <!-- end col-4 -->
+                <!-- begin col-4 -->
+                <div class="col-md-4">
+                    <!-- begin section-container -->
+                    <div class="section-container">
+                        <h4>New Users</h4>
+                        <ul class="new-user">
+                            <li><a href="#"><img src="../../static/assets/img/user/user-1.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../../static/assets/img/user/user-2.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../../static/assets/img/user/user-3.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../../static/assets/img/user/user-4.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../../static/assets/img/user/user-5.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../../static/assets/img/user/user-6.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../../static/assets/img/user/user-7.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../../static/assets/img/user/user-8.jpg" alt="" /></a></li>
+                            <li><a href="#"><img src="../../static/assets/img/user/user-9.jpg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                    <!-- end section-container -->
+                </div>
+                <!-- end col-4 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end #footer -->
+    <!-- begin #footer-copyright -->
+    <div id="footer-copyright" class="footer-copyright">
+        <div class="container">
+            &copy; Color Forum版权归龙溪有限公司所有2018年
+            <a href="#">联系我们</a>
+            <a href="#">知识库</a>
+        </div>
+    </div>
+    <!-- end #footer-copyright -->
+    <!-- begin theme-panel -->
+    <div class="theme-panel">
+        <a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+        <div class="theme-panel-content">
+            <ul class="theme-list clearfix">
+                <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-theme-file="../../static/assets/css/forum/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
+                <li><a href="javascript:;" class="bg-blue" data-theme="blue" data-theme-file="../../static/assets/css/forum/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue">&nbsp;</a></li>
+                <li class="active"><a href="javascript:;" class="bg-green" data-theme-file="../../static/assets/css/forum/theme/default.css" data-theme="default" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
+                <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-theme-file="../../static/assets/css/forum/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
+                <li><a href="javascript:;" class="bg-red" data-theme="red" data-theme-file="../../static/assets/css/forum/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end theme-panel -->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../../static/assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../../static/assets/plugins/bootstrap3/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../static/assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="../../static/assets/crossbrowserjs/respond.min.js"></script>
+		<script src="../../static/assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<script src="../../static/assets/plugins/js-cookie/js.cookie.js"></script>
+	<script src="../../static/assets/js/forum/apps.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+    	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="../../static/assets/plugins/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.js"></script>
+	<script src="../../static/assets/plugins/bootstrap-wysihtml5/src/bootstrap-wysihtml5.js"></script>
+	<script src="../../static/assets/js/forum/forum-details-page.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	<script>
+	    $(document).ready(function() {
+	        App.init();
+	        {%block DetailsPage%}{%endblock DetailsPage%}
+	    });
+	</script>
+</body>
+</html>

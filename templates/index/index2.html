@@ -1,0 +1,290 @@
+{%extends 'index.read.html'%}
+{%block title%}{{title}}{%endblock title%}
+{%block status%}
+            <div class="collapse navbar-collapse" id="header-navbar">
+                <ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="navbar-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="输入关键字..." />
+								<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+							</div>
+						</form>
+					</li>
+                    <li><a href="">欢迎回家</a></li>
+                    <li><a href="">{{request.session.user_email}}</a></li>
+                    <li><a href="/index_hand/">退出</a></li>
+                </ul>
+            </div>
+{%endblock status%}
+{%block body%}
+    <div class="search-banner has-bg">
+        <!-- begin bg-cover -->
+        <div class="bg-cover">
+            <img src="../../static/assets/img/cover/cover-1.jpg" alt="" />
+        </div>
+        <!-- end bg-cover -->
+        <!-- begin container -->
+        <div class="container">
+            <h1>1,293帖子供讨论</h1>
+            <div class="input-group m-b-20">
+                <input type="text" class="form-control input-lg" placeholder="搜索" />
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-lg"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+            <h5>按热门分类浏览</h5>
+            <ul class="popular-tags">
+                <li><a href="#"><i class="fa fa-circle text-danger"></i> 七彩繁殖</a></li>
+                <li><a href="#"><i class="fa fa-circle text-primary"></i> 水族器材</a></li>
+                <li><a href="#"><i class="fa fa-circle text-warning"></i> 龙鱼欣赏</a></li>
+                <li><a href="#"><i class="fa fa-circle"></i> 七彩美图</a></li>
+                <li><a href="#"><i class="fa fa-circle text-success"></i> 草龟苗</a></li>
+                <li><a href="#"><i class="fa fa-circle text-muted"></i> 墨龟</a></li>
+                <li><a href="#"><i class="fa fa-circle text-purple"></i> 新手用药</a></li>
+            </ul>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end search-banner -->
+
+    <!-- begin content -->
+    <div class="content">
+        <!-- begin container -->
+        <div class="container">
+            <!-- begin panel-forum -->
+            <div class="panel panel-forum">
+                <!-- begin panel-heading -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">官方管理区</h4>
+                </div>
+                <!-- end panel-heading -->
+                <!-- begin forum-list -->
+                <ul class="forum-list">
+                    <li>
+                        <!-- begin media -->
+                        <div class="media">
+                            <img src="../../static/assets/img/icon/icon-gold-note.png" alt="" />
+                        </div>
+                        <!-- end media -->
+                        <!-- begin info-container -->
+                        <div class="info-container">
+                            <div class="info">
+                                <h4 class="title"><a href="">公告</a></h4>
+                                <p class="desc">
+                                    最新的官方新闻、事件、公告 、更新和其他信息发布.
+                                </p>
+                            </div>
+                            <div class="total-count">
+                                <span class="total-post">1,293</span> <span class="divider">/</span> <span class="total-comment">9,291</span>
+                            </div>
+                            <div class="latest-post">
+                                <h4 class="title"><a href="">中国海南开放59个国家免签停留30天</a></h4>
+                                <p class="time">2018-04-18 20:45 <a href="category_list.html" class="user">管理员</a></p>
+                            </div>
+                        </div>
+                        <!-- end info-container -->
+                    </li>
+                    <li>
+                        <!-- begin media -->
+                        <div class="media">
+                            <img src="../../static/assets/img/icon/icon-cone.png" alt="" />
+                        </div>
+                        <!-- end media -->
+                        <!-- begin info-container -->
+                        <div class="info-container">
+                            <div class="info">
+                                <h4 class="title"><a href="">Bug / 建议</a></h4>
+                                <p class="desc">
+                                    模板开发建议,与内容相关的投诉和错误提交.
+                                </p>
+                            </div>
+                            <div class="total-count">
+                                <span class="total-post">1,293</span> <span class="divider">/</span> <span class="total-comment">9,291</span>
+                            </div>
+                            <div class="latest-post">
+                                <h4 class="title"><a href="">中国海南开放59个国家免签停留30天</a></h4>
+                                <p class="time">2018-04-18 20:45 <a href="category_list.html" class="user">管理员</a></p>
+                            </div>
+                        </div>
+                        <!-- end info-container -->
+                    </li>
+                </ul>
+                <!-- end forum-list -->
+            </div>
+            <!-- end panel-forum -->
+            <!-- begin panel-forum -->
+            <div class="panel panel-forum">
+                <!-- begin panel-heading -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">VIP会员讨论区</h4>
+                </div>
+                <!-- end panel-heading -->
+                <!-- begin forum-list -->
+                <ul class="forum-list">
+                    <li>
+                        <!-- begin media -->
+                        <div class="media">
+                            <img src="../../static/assets/img/icon/icon-chat-bubble.png" alt="" />
+                        </div>
+                        <!-- end media -->
+                        <!-- begin info-container -->
+                        <div class="info-container">
+                            <div class="info">
+                                <h4 class="title"><a href="/list/">七彩神仙鱼</a></h4>
+                                <p class="desc">
+                                    七彩神仙鱼以"热带鱼之帝王"之称的埃及神仙最受人们欢迎.人工繁殖的神仙鱼基本上是由普通神仙改良而来.
+                                </p>
+                            </div>
+                            <div class="total-count">
+                                <span class="total-post">1,293</span> <span class="divider">/</span> <span class="total-comment">9,291</span>
+                            </div>
+                            <div class="latest-post">
+                                <h4 class="title"><a href="category_list.html">3公分苗子到家6个月纪念 </a></h4>
+                                <p class="time">2018-05-09 10:49 <a href="category_list.html" class="user">帅哥他爹123</a></p>
+                            </div>
+                        </div>
+                        <!-- end info-container -->
+                    </li>
+                    <li>
+                        <!-- begin media -->
+                        <div class="media">
+                            <img src="../../static/assets/img/icon/icon-chat-bubble.png" alt="" />
+                        </div>
+                        <!-- end media -->
+                        <!-- begin info-container -->
+                        <div class="info-container">
+                            <div class="info">
+                                <h4 class="title"><a href="category_list.html">龙鱼</a></h4>
+                                <p class="desc">
+                                    龙鱼可分为银龙（适合新手试玩）、金龙和红龙，价格也是根据品相从百到上万.
+                                </p>
+                            </div>
+                            <div class="total-count">
+                                <span class="total-post">1,293</span> <span class="divider">/</span> <span class="total-comment">9,291</span>
+                            </div>
+                            <div class="latest-post">
+                                <h4 class="title"><a href="category_list.html">自己动手，丰衣足食！路上看到一个别人丢在路边的鱼缸！好像尺寸</a></h4>
+                                <p class="time">2018-05-09 10:49 <a href="" class="user">和尚爱恰肉</a></p>
+                            </div>
+                        </div>
+                        <!-- end info-container -->
+                    </li>
+                    <li>
+                        <!-- begin media -->
+                        <div class="media">
+                            <img src="../../static/assets/img/icon/icon-chat-bubble.png" alt="" />
+                        </div>
+                        <!-- end media -->
+                        <!-- begin info-container -->
+                        <div class="info-container">
+                            <div class="info">
+                                <h4 class="title"><a href="">罗汉鱼</a></h4>
+                                <p class="desc">
+                                    罗汉鱼火了一阵,价格也是一路倍生突遇滑铁卢,价格直线掉了下来,但是抵挡不住玩家饲养的热情..
+                                </p>
+                            </div>
+                            <div class="total-count">
+                                <span class="total-post">1,293</span> <span class="divider">/</span> <span class="total-comment">9,291</span>
+                            </div>
+                            <div class="latest-post">
+                                <h4 class="title"><a href="category_list.html">这宝宝从8cm养一个月了 个产大了头没变啊。。。各位大湿看看</a></h4>
+                                <p class="time">2018-05-08 22:30 <a href="" class="user">jz1651xu</a></p>
+                            </div>
+                        </div>
+                        <!-- end info-container -->
+                    </li>
+                    <li>
+                        <!-- begin media -->
+                        <div class="media">
+                            <img src="../../static/assets/img/icon/icon-chat-bubble.png" alt="" />
+                        </div>
+                        <!-- end media -->
+                        <!-- begin info-container -->
+                        <div class="info-container">
+                            <div class="info">
+                                <h4 class="title"><a href="category_list.html">中华草龟</a></h4>
+                                <p class="desc">
+                                    中华草龟,具有镇宅之特殊疗效,个人比较喜欢草龟性格特温顺.
+                                </p>
+                            </div>
+                            <div class="total-count">
+                                <span class="total-post">1,293</span> <span class="divider">/</span> <span class="total-comment">9,291</span>
+                            </div>
+                            <div class="latest-post">
+                                <h4 class="title"><a href="category_list.html">请问，我家龟是怎么了，好急，求求你们告诉我好不好 </a></h4>
+                                <p class="time">2018-05-08 22:30 <a href="" class="user">龙哥</a></p>
+                            </div>
+                        </div>
+                        <!-- end info-container -->
+                    </li>
+                </ul>
+                <!-- end forum-list -->
+            </div>
+            <!-- end panel-forum -->
+            <!-- begin panel-forum -->
+            <div class="panel panel-forum">
+                <!-- begin panel-heading -->
+                <div class="panel-heading">
+                    <h4 class="panel-title">移动应用讨论</h4>
+                </div>
+                <!-- end panel-heading -->
+                <!-- begin forum-list -->
+                <ul class="forum-list">
+                    <li>
+                        <!-- begin media -->
+                        <div class="media">
+                            <img src="../../static/assets/img/icon/icon-discussion-grey.png" alt="" />
+                        </div>
+                        <!-- end media -->
+                        <!-- begin info-container -->
+                        <div class="info-container">
+                            <div class="info">
+                                <h4 class="title"><a href="">安卓用户</a></h4>
+                                <p class="desc">
+                                    Template development proposals, content-related complaints and bug submission.
+                                </p>
+                            </div>
+                            <div class="total-count">
+                                <span class="total-post">1,293</span> <span class="divider">/</span> <span class="total-comment">9,291</span>
+                            </div>
+                            <div class="latest-post">
+                                <h4 class="title"><a href="category_list.html">Migrate from jQuery 1.8.x to jQuery 2.0.x</a></h4>
+                                <p class="time">Yesterday 10:49pm <a href="" class="user">admin</a></p>
+                            </div>
+                        </div>
+                        <!-- end info-container -->
+                    </li>
+                    <li>
+                        <!-- begin media -->
+                        <div class="media">
+                            <img src="../../static/assets/img/icon/icon-discussion-grey.png" alt="" />
+                        </div>
+                        <!-- end media -->
+                        <!-- begin info-container -->
+                        <div class="info-container">
+                            <div class="info">
+                                <h4 class="title"><a href="category_list.html">苹果用户</a></h4>
+                                <p class="desc">
+                                    Template development proposals, content-related complaints and bug submission.
+                                </p>
+                            </div>
+                            <div class="total-count">
+                                <span class="total-post">1,293</span> <span class="divider">/</span> <span class="total-comment">9,291</span>
+                            </div>
+                            <div class="latest-post">
+                                <h4 class="title"><a href="category_list.html">Migrate from jQuery 1.8.x to jQuery 2.0.x</a></h4>
+                                <p class="time">Yesterday 10:49pm <a href="" class="user">admin</a></p>
+                            </div>
+                        </div>
+                        <!-- end info-container -->
+                    </li>
+                </ul>
+                <!-- end forum-list -->
+            </div>
+            <!-- end panel-forum -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end content -->
+{%endblock body%}

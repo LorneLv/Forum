@@ -1,0 +1,102 @@
+{%extends 'index.base.html'%}
+{%block title%}<title>{{title}}</title>{%endblock title%}
+{%block body%}
+<body class="pace-top bg-white">
+	<!-- begin #page-loader -->
+	<div id="page-loader" class="fade show"><span class="spinner"></span></div>
+	<!-- end #page-loader -->
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade">
+	    <!-- begin register -->
+        <div class="register register-with-news-feed">
+            <!-- begin news-feed -->
+            <div class="news-feed">
+                <div class="news-image" style="background-image: url(../../static/assets/img/login-bg/login-bg-9.jpg)"></div>
+                <div class="news-caption">
+                    <h4 class="caption-title"><b>Color</b> Member</h4>
+                    <p>
+                        欢迎注册本论坛会员,在这里您可以畅所欲言，预计6月Color论坛将全面开放.
+                    </p>
+                </div>
+            </div>
+            <!-- end news-feed -->
+            <!-- begin right-content -->
+            <div class="right-content">
+                <!-- begin register-header -->
+                <h1 class="register-header">
+                    注册
+                    <small>创建您的Color 会员帐户,会员永久免费</small>
+                </h1>
+                <!-- end register-header -->
+                <!-- begin register-content -->
+                <div class="register-content">
+                    <form action="/register_hand/" method="post" class="margin-bottom-0">
+                        {%csrf_token%}
+                        <label class="control-label">姓名<span class="text-danger">*</span></label>
+                        <div class="row m-b-15">
+                            <div class="col-md-12">
+                                <input type="text"  name ="xing"class="form-control" placeholder="您的名字" required />
+                            </div>
+                        </div>
+                        <label class="control-label">电子邮箱 <span class="text-danger">*</span></label>
+                        <div class="row m-b-15">
+                            <div class="col-md-12">
+                                <input type="text"  name ="email" class="form-control" placeholder="请输入邮箱地址" required />
+                            </div>
+                        </div>
+                        <label class="control-label">确认电子邮箱<span class="text-danger">*</span></label>
+                        <div class="row m-b-15">
+                            <div class="col-md-12">
+                                <input type="text" name ="remail" class="form-control" placeholder="请再次输入邮箱地址" required />
+                            </div>
+                        </div>
+                        <label class="control-label">密码<span class="text-danger">*</span></label>
+                        <div class="row m-b-15">
+                            <div class="col-md-12">
+                                <input type="password" name ="password" class="form-control" placeholder="请输入密码" required />
+                            </div>
+
+                        </div>
+                        <p><font color="#FF0000"><b>{{errmsg}}</b></font></p>
+                        <div class="checkbox checkbox-css m-b-30">
+                        	<div class="checkbox checkbox-css m-b-30">
+								<input type="checkbox" id="agreement_checkbox" value="" checked="checked">
+								<label for="agreement_checkbox" >
+									点击注册，即表示您同意我们的 <a href="javascript:;">条款</a>, 并且您已阅读我们的 <a href="javascript:;">数据政策</a>, 包括我们的 <a href="javascript:;">Cookie使用</a>.
+								</label>
+							</div>
+                        </div>
+                        <div class="register-buttons">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">登录</button>
+                        </div>
+
+                        <div class="m-t-20 m-b-40 p-b-40 text-inverse">
+                            已经是会员? 点击<a href="/login/">这里</a> 登录.
+                        </div>
+
+                    </form>
+                        <p class="text-center">
+                            &copy; Color Forum版权归龙溪有限公司所有2018年
+                        </p>
+                    {%endblock body%}
+    {%block div%}
+                </div>
+                <!-- end register-content -->
+            </div>
+            <!-- end right-content -->
+        </div>
+        {%endblock div%}
+        <!-- end register -->
+        
+        <!-- begin theme-panel -->
+
+	<!-- end page container -->
+
+{%block script%}
+	<script>
+		$(document).ready(function() {
+			App.init();
+		});
+	</script>
+{%endblock script%}
